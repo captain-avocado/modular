@@ -1,17 +1,17 @@
 import React, { FC, useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Title } from '../../../../common/presentation/components/title/Title';
-import { fetchActiveJoke } from '../../domain/store/actions';
-import { getActiveJoke } from '../../domain/store/selectors';
+import { Title } from '../../../../../common/ui/components/title/Title';
+import { fetchActiveJoke } from '../../../domain/store/actions';
+import { getActiveJoke } from '../../../domain/store/selectors';
 import {
   removeJokeAsync,
   saveJokeAsync
-} from '../../../saved-jokes/domain/store/actions';
-import { getSavedJokes } from '../../../saved-jokes/domain/store/selectors';
-import { Joke } from '../../../../common/presentation/components/joke/Joke';
+} from '../../../../saved-jokes/domain/store/actions';
+import { getSavedJokes } from '../../../../saved-jokes/domain/store/selectors';
+import { Joke } from '../../../../../common/ui/components/joke/Joke';
 import { TopRow, Buttons, ButtonWrapper, JokeWrapper } from './Styles';
-import { routePaths } from '../../../../common/presentation/router/enums/route-paths';
+import { routePaths } from '../../../../../common/ui/router/enums/route-paths';
 import { jokesFetchingTimeout } from './constants/jokes-fetching-timeout';
 
 let intervalId: number | undefined = undefined;

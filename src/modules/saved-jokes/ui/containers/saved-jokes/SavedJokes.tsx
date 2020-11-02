@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { Title } from '../../../../common/presentation/components/title/Title';
-import { routePaths } from '../../../../common/presentation/router/enums/route-paths';
+import { Title } from '../../../../../common/ui/components/title/Title';
+import { routePaths } from '../../../../../common/ui/router/enums/route-paths';
 import {
   DeleteButton,
   Jokes,
@@ -10,14 +10,14 @@ import {
   JokeCol
 } from './Styles';
 import { Link } from 'react-router-dom';
-import { Button } from '../../../../common/presentation/components/button/Button';
-import { Joke } from '../../../../common/presentation/components/joke/Joke';
+import { Button } from '../../../../../common/ui/components/button/Button';
+import { Joke } from '../../../../../common/ui/components/joke/Joke';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSavedJokes } from '../../domain/store/selectors';
+import { getSavedJokes } from '../../../domain/store/selectors';
 import {
   removeAllJokesAsync,
   removeJokeAsync
-} from '../../domain/store/actions';
+} from '../../../domain/store/actions';
 
 export const SavedJokes: FC = () => {
   const dispatch = useDispatch();

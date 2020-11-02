@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from '../../../../common/presentation/components/button/Button';
+import { Button } from '../../../../../common/ui/components/button/Button';
 
 export const TopRow = styled.div`
   display: flex;

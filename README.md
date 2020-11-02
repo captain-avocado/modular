@@ -5,7 +5,7 @@
 ### Layers
 
 Project is splitted on three layers: 
- - presentation - responds for ui, generally consist of FC
+ - ui - responds for ui, generally consist of FC
  - domain - responds for main logic with entities, generally consists of main redux store of current module
  - data-access - responds for api, routes, mapping
  

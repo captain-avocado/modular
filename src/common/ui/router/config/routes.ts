@@ -1,5 +1,5 @@
-import { JokesDashboard } from '../../../../modules/jokes-dashboard/presentation/jokes-dashboard/JokesDashboard';
-import { SavedJokes } from '../../../../modules/saved-jokes/presentation/saved-jokes/SavedJokes';
+import { JokesDashboard } from '../../../../modules/jokes-dashboard/ui/containers/jokes-dashboard/JokesDashboard';
+import { SavedJokes } from '../../../../modules/saved-jokes/ui/containers/saved-jokes/SavedJokes';
 import { routePaths } from '../enums/route-paths';
 import { Route } from '../interfaces/route.interface';
 
