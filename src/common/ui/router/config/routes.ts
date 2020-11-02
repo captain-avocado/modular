@@ -6,10 +6,12 @@ import { Route } from '../interfaces/route.interface';
 export const routes: Route[] = [
   {
     path: routePaths.SAVED_JOKES,
-    component: SavedJokes
+    component: SavedJokes,
+    guards: []
   },
   {
     path: routePaths.JOKES_DASHBOARD,
-    component: JokesDashboard
+    component: JokesDashboard,
+    guards: []
   }
 ];
