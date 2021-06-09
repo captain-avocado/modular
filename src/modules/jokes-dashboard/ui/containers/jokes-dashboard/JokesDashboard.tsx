@@ -39,7 +39,7 @@ export const JokesDashboard: FC = () => {
   };
 
   const handleStartGettingJokes = async (): Promise<void> => {
-    const interval = setInterval(() => {
+    const interval = window.setInterval(() => {
       handleGetJoke();
     }, jokesFetchingTimeout);
     intervalId = interval;
