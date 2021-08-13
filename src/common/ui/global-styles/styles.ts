@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    font-family: 'Arial';
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #333;
   }
@@ -27,10 +27,13 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     background: #F5F6FA;
     width: 100%;
+    height: 100%;
   }
 
   #root {
-    margin: 16px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
   
   * {

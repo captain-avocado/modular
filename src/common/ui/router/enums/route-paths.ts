@@ -1,4 +1,5 @@
 export enum routePaths {
   JOKES_DASHBOARD = '/',
-  SAVED_JOKES = '/saved'
+  SAVED_JOKES = '/saved',
+  LOGIN = '/login'
 }

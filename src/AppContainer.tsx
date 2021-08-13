@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
 `;
 
 export const AppContainer: FC<Props> = ({ children }: Props) => {

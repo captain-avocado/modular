@@ -27,17 +27,19 @@ export const setSavedJokes = (jokes: Joke[]): SetSavedJokes => ({
   jokes
 });
 
-export const saveJokeAsync = (joke: Joke): AppThunk => async (dispatch) => {
-  await addFavouriteJoke(joke);
-  dispatch(saveJoke(joke));
-};
+export const saveJokeAsync =
+  (joke: Joke): AppThunk =>
+  async (dispatch) => {
+    await addFavouriteJoke(joke);
+    dispatch(saveJoke(joke));
+  };
 
-export const removeJokeAsync = (jokeId: string): AppThunk => async (
-  dispatch
-) => {
-  await removeFavouriteJoke(jokeId);
-  dispatch(removeJoke(jokeId));
-};
+export const removeJokeAsync =
+  (jokeId: string): AppThunk =>
+  async (dispatch) => {
+    await removeFavouriteJoke(jokeId);
+    dispatch(removeJoke(jokeId));
+  };
 
 export const removeAllJokesAsync = (): AppThunk => async (dispatch) => {
   await removeAllFavouriteJokes();
